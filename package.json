@@ -1,0 +1,16 @@
+{
+  "name": "alexa-home-lights",
+  "version": "1.0.0",
+  "description": "Lighting controls with AWS Alexa Voice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nicolas dywicki",
+  "license": "ISC",
+  "dependencies": {
+    "alexa-app": "^2.3.4",
+    "lodash": "^4.17.2",
+    "mqtt": "^2.1.3"
+  }
+}
