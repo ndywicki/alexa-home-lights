@@ -6,7 +6,8 @@ Base on https://github.com/alexa/alexa-avs-sample-app[Alexa Voice Service (AVS)]
 Thanks https://github.com/matt-kruse/alexa-app[alexa-app] a node module and https://github.com/matt-kruse/alexa-app-server[alexa-app-server] to simplify development of Alexa Skills.
 
 Global architecture:
-image::schema.png
+
+image::schema.png[]
 
 
 
