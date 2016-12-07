@@ -12,9 +12,6 @@ Global architecture:
 image::https://github.com/ndywicki/alexa-home-lights/blob/master/images/schema.png[]
 
 
-![](images/schema.png)
-
-
 = Installation and Testing
 
 First install https://github.com/matt-kruse/alexa-app-server[alexa-app-server].
