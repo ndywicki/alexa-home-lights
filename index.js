@@ -6,10 +6,14 @@ const Alexa = require('alexa-app');
 const app = new Alexa.app('light');
 const mqtt = require('mqtt');
 
-//MQTT URL server
-const MQTT_URL = 'mqtt://YOUR_BROKER_URL';
+//MQTT server
+var ops = {
+    port: 'MQTT_PORT',
+    host: 'MQTT_HOST'
+};
+console.log("MQTT URL="+ops.host+':'+ops.port);
 //MQTT connection
-const client = mqtt.connect(MQTT_URL);
+const client = mqtt.connect(ops);
 client.on('connect', function() {
     console.log("MQTT connected");
 });
@@ -41,8 +45,9 @@ app.intent('LightControlIntent', {
             //MQTT sent
             console.log('Sent MQTT order ' +  order);
             let state = order==='on' ? {'state': 1} : {'state': 0};
-            client.publish(lightsTopic, JSON.stringify(state));
-            res.say('The light has been turn ' + order).send();
+            client.publish(lightsTopic, JSON.stringify(state), function(){
+                res.say('The light has been turn ' + order).send();
+            });
             return false;
         }
 
