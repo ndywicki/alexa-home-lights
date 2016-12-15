@@ -2,8 +2,6 @@
 
 This is an AWS Lambda project for Voice Control of Raspberry Pi using AWS Alexa voice service & IoT MQTT.
 
-You can ask to Alexa
-
 Base on https://github.com/alexa/alexa-avs-sample-app[Alexa Voice Service (AVS)] on Rasberry PI for Alexa part.
 Thanks to https://github.com/matt-kruse/alexa-app[alexa-app] a node module and https://github.com/matt-kruse/alexa-app-server[alexa-app-server] to simplify development of Alexa Skills.
 
