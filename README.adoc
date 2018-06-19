@@ -19,7 +19,7 @@ Then go in `alexa-app-server\examples\apps` and clone this repository:
 [source,bash]
 ----
 cd alexa-app-server\examples\apps
-git clone TODO
+git clone https://github.com/ndywicki/alexa-home-lights.git
 npm install
 ----
 
